@@ -1,6 +1,6 @@
 'use strict';
 angular.module('AngularBuilderApp')
-.controller('builderController', ['$http'
+.controller('builderController', ['$http',
 function ($http) {
 
     var vm = this;
@@ -14,6 +14,7 @@ function ($http) {
 	vm.addServiceToModule = addServiceToModule;
 	vm.loadView = loadView;
 	vm.loadModule = loadModule;
+	vm.createApp = createApp;
 
 	function addView () {
 		vm.views[vm.newViewName] = {
